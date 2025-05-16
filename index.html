@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+        <script>document.documentElement.className += " js";</script>
     <title>Barbearia Lima - Sua melhor versão começa aqui.</title>
 </head>
 <body>
@@ -14,15 +15,6 @@
           <a href="./"><img src="icons/icon-logo.png" alt="logo" /></a>
         </div>
         <nav class="header-menu">
-            <!--
-                      <button
-            class="font-saira"
-            data-menu="button"
-            aria-expanded="false"
-            aria-controls="menu"
-          >Menu
-        </button>
-            -->
           <ul class="font-orbiton" data-menu="list" id="menu">
             <li><a href="./" class="cor-1 font-saira">Serviços</a></li>
             <li><a href="./" class="cor-1 font-saira">Galeria</a></li>
@@ -30,13 +22,15 @@
           </ul>
         </nav>
       <nav class="header-menu">
-          <ul id="lista-contato">
+          <ul id="lista-redes" data-menu="list">
             <li><a href="./"><img src="icons/facebook.png" alt="facebook"></a></li>
             <li><a href="./"><img src="icons/instagram.png" alt="instagram.png"></a></li>
             <li><a href="./"><img src="icons/whastapp.png" alt="whastapp.png"></a></li>
           </ul>
+          <button class="font-saira" data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
       </nav>
       </div>
     </header>
 </body>
+  <script type="module" src="./modules/script.js"></script>
 </html>
