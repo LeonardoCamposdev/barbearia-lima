@@ -1,0 +1,23 @@
+.header-bg{
+    background-color: rgb(53, 48, 48);
+}
+
+
+.header-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-menu{
+    display: flex;
+}
+
+.header-menu #menu{
+    display: flex;
+}
+
+.lista-contato{
+    display: flex;
+    gap: 20px
+}
