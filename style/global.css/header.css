@@ -2,22 +2,35 @@
     background-color: rgb(53, 48, 48);
 }
 
-
 .header-conteudo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.header-img{
+    width: 100px;
+    height: 100px;
 }
 
 .header-menu{
     display: flex;
+    align-items: center;
 }
 
 .header-menu #menu{
     display: flex;
+    gap: 40px;
 }
 
-.lista-contato{
+
+.header-menu #lista-contato{
     display: flex;
-    gap: 20px
+    gap: 20px;
+}
+
+.header-menu #lista-contato img{
+    width: 30px;
+    border-radius: 5px;
 }

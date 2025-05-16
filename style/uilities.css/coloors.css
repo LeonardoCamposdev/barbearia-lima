@@ -5,3 +5,10 @@
     --cor-3: #EFAD0A;
 }
 
+.cor-0{
+    color: var(--cor-0);
+}
+
+.cor-1{
+    color: var(--cor-1);
+}
