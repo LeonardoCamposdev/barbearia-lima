@@ -1,32 +1,32 @@
-.header-bg{
-    background-color: rgb(53, 48, 48);
+.header-bg {
+  background-color: rgb(53, 48, 48);
 }
 
-.header-conteudo{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 16px 0px 0px 0px;
+.header-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 16px 0px 0px 0px;
 }
 
-.header-img{
-    width: 100px;
-    height: 100px;
+.header-img {
+  width: 100px;
+  height: 100px;
 }
 
-.header-menu{
-    display: flex;
-    align-items: center;
+.header-menu {
+  display: flex;
+  align-items: center;
 }
 
 /* HEADER-MENU */
-[data-menu="list"]{
-    display: flex;
-    gap: 40px;
+[data-menu="list"] {
+  display: flex;
+  gap: 40px;
 }
 
-.header-menu #menu a{
-    position: relative;
+.header-menu #menu a {
+  position: relative;
 }
 
 .header-menu #menu a::after {
@@ -41,26 +41,25 @@
   position: absolute;
 }
 
-.header-menu #menu a:hover::after{
-    width: 100%;
+.header-menu #menu a:hover::after {
+  width: 100%;
 }
 
 /* LISTA CONTATO REDES */
-[data-menu="list"]{
-    display: flex;
-    gap: 20px;
+[data-menu="list"] {
+  display: flex;
+  gap: 20px;
 }
 
-.header-menu #lista-redes img{
-    width: 30px;
+.header-menu #lista-redes img {
+  width: 30px;
 }
 
-.header-menu #lista-redes a{
-    border-radius: 5px;
-    position: relative;
-    display: inline-block;
+.header-menu #lista-redes a {
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
 }
-
 
 .header-menu #lista-redes a::after {
   content: "";
@@ -73,6 +72,20 @@
   transition: height 0.3s ease;
 }
 
-.header-menu #lista-redes a:hover::after{
-    height: 100%;
+.header-menu #lista-redes a:hover::after {
+  height: 100%;
+}
+
+@media (max-width: 835px) {
+  .header-menu #menu a::after {
+    display: none;
+  }
+
+  .header-menu #menu a:hover::after {
+    width: none;
+  }
+
+  .header-menu #menu a:hover {
+    color: var(--cor-3);
+  }
 }
