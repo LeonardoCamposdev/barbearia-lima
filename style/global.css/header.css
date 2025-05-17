@@ -20,7 +20,7 @@
 }
 
 /* HEADER-MENU */
-.header-menu #menu{
+[data-menu="list"]{
     display: flex;
     gap: 40px;
 }
@@ -46,7 +46,7 @@
 }
 
 /* LISTA CONTATO REDES */
-.header-menu #lista-redes{
+[data-menu="list"]{
     display: flex;
     gap: 20px;
 }
@@ -75,11 +75,4 @@
 
 .header-menu #lista-redes a:hover::after{
     height: 100%;
-}
-
-
-@media(max-width:835px){
-    .header-menu #menu, .header-menu #lista-redes{
-    display: none;
-}
 }
