@@ -7,7 +7,7 @@
     display: flex;
     background: linear-gradient(135deg, #d18a07 20%, #ffbe1b, #ad8528, #ffbc13);
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 18px 16px;
     border-radius: 4px;
     text-transform: uppercase;
     font-weight: bold;
@@ -20,11 +20,10 @@
   }
 
   .js [data-menu="button"]::before {
-    margin-right: 4px;
     content: "";
     display: inline-block;
     height: 2px;
-    width: 12px;
+    width: 16px;
     background-color: #fff;
     box-shadow: 0 4px #fff, 0 -4px #fff;
     transition: transform 0.3s;
@@ -42,19 +41,6 @@
     z-index: 200;
     right: 0;
     top: 115px;
-    padding: 18px 7px 20px;
-    text-align: center;
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  #lista-redes {
-    display: none;
-    position: absolute;
-    background: var(--cor-0);
-    width: 100vw;
-    z-index: 200;
-    right: 0;
-    top: 227px;
     padding: 18px 7px 20px;
     text-align: center;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);

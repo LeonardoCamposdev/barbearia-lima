@@ -46,22 +46,22 @@
 }
 
 /* LISTA CONTATO REDES */
-[data-menu="list"] {
+#lista-redes {
   display: flex;
   gap: 20px;
 }
 
-.header-menu #lista-redes img {
+#lista-redes img {
   width: 30px;
 }
 
-.header-menu #lista-redes a {
+#lista-redes a {
   border-radius: 5px;
   position: relative;
   display: inline-block;
 }
 
-.header-menu #lista-redes a::after {
+#lista-redes a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -72,7 +72,7 @@
   transition: height 0.3s ease;
 }
 
-.header-menu #lista-redes a:hover::after {
+#lista-redes a:hover::after {
   height: 100%;
 }
 
@@ -85,7 +85,21 @@
     width: none;
   }
 
-  .header-menu #menu a:hover {
-    color: var(--cor-3);
+  .header-menu #menu{
+    background-color: var(--cor-1);
+    color: var(--cor-0);
+  }
+
+  .header-menu #menu li{
+    padding: 8px;
+  }
+  
+  .header-menu #menu li:hover {
+    background-color: var(--cor-3);
+  }
+
+  .header-menu #menu a{
+    color: var(--cor-0);
+    font-weight: 500;
   }
 }
