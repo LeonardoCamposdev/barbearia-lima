@@ -1,12 +1,12 @@
-.header-bg {
-  background-color: rgb(53, 48, 48);
-}
 
 .header-conteudo {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 16px 0px 0px 0px;
+  border-bottom: .5px solid #969494c0;
+  position: relative;
+  z-index: 8888;
 }
 
 .header-img {

@@ -1,0 +1,9 @@
+.introducao-bg{
+    height: 100vh;
+    background: url(../../images/imagem-introducao.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -115px;
+}
