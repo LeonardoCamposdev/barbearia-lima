@@ -9,6 +9,10 @@
 
 .introducao-conteudo {
   margin-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  gap: 80px;
 }
 
 .introducao-conteudo h2 {
@@ -29,6 +33,13 @@
   font-size: 0.85rem;
   font-weight: 400;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.introducao-conteudo .referencia-icons {
+  width: 20px;
+  margin-right: 8px;
 }
 
 .introducao-lista {
@@ -55,6 +66,43 @@
   max-width: 15ch;
   font-weight: 400;
   font-size: 0.85rem;
+}
+
+.introducao-localidade {
+  background-color: var(--cor-1);
+  padding: 20px;
+  border-radius: 12px;
+  height: 320px;
+  width: 400px;
+}
+
+.introducao-localidade .icon {
+  height: 35px;
+  width: 25px;
+  background-color: var(--cor-4);
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+.introducao-localidade h1 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.introducao-localidade > li > p {
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.introducao-localidade > li > p:nth-child(6) {
+  margin-bottom: 40px;
+}
+
+.icon-zap svg {
+  position: relative;
+  left: 5px;
+  top: 2.5px;
 }
 
 @media (max-width: 510px) {
