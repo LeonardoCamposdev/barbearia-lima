@@ -1,0 +1,67 @@
+.servicos-bg{
+    background: url(../../images/imagem-servicos.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.servicos-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 20px 80px 20px;
+}
+
+.servicos-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos-conteudo h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--cor-4);
+    margin-bottom: 16px;
+}
+
+.servicos-conteudo h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.servicos-conteudo p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.servicos-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.servicos-lista li{
+    padding: 20px;
+    background-color: #4e4d498e;
+    border-radius: 12px;
+}
+
+.servicos-lista img{
+    width: 35px;
+}
+
+.servicos-lista h1{
+    text-align: initial;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+
+.servicos-lista p{
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
