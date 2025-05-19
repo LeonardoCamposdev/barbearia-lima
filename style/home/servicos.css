@@ -38,6 +38,7 @@
 }
 
 .servicos-lista{
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
@@ -45,8 +46,9 @@
 
 .servicos-lista li{
     padding: 20px;
-    background-color: #4e4d498e;
+    background-color: rgba(78, 77, 73, 0.8);
     border-radius: 12px;
+    width: 240px;
 }
 
 .servicos-lista img{
@@ -61,6 +63,7 @@
 
 
 .servicos-lista p{
+    text-align: initial;
     font-weight: 400;
     font-size: 0.95rem;
     margin-bottom: 16px;
