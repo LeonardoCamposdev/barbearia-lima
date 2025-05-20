@@ -41,6 +41,10 @@
   margin-bottom: 20px;
 }
 
+.equipe-lista .img-2 {
+  box-shadow: -15px 16px 0px -3px var(--cor-4);
+}
+
 .equipe-lista li {
   display: grid;
   justify-content: center;
