@@ -20,7 +20,7 @@
 .servicos-conteudo h2{
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-bottom: 2px solid var(--cor-4);
     margin-bottom: 16px;
 }
