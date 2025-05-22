@@ -102,6 +102,7 @@
     font-size: 1.1rem;
     margin-bottom: 16px;
     display: inline-block;
+    border-bottom: 2px solid var(--cor-4);
 }
 
 
