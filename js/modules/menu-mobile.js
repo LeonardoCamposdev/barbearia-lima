@@ -9,7 +9,7 @@ export default function initMenuMobile(){
 
     outsideClick(menuList,'click', ()=>{
         menuList.classList.remove('active');
-        this.classList.remove('active')
+        this.classList.remove('active');
     })
     }
 
