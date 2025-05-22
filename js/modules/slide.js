@@ -1,6 +1,5 @@
 export  function initSlide1() {
   const btnSlider = document.querySelectorAll("[data-btn1]");
-  console.log(btnSlider)
   const slider = document.querySelector("[data-slider1]");
 
   let scrollPosition = 0;
@@ -30,7 +29,6 @@ export  function initSlide1() {
 
 export  function initSlide2() {
   const btnSlider = document.querySelectorAll("[data-btn2]");
-  console.log(btnSlider)
   const slider = document.querySelector("[data-slider2]");
 
   let scrollPosition = 0;
