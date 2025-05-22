@@ -9,8 +9,8 @@
 }
 
 .footer-conteudo {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 16px 0px 0px 0px;
@@ -27,17 +27,18 @@
   gap: 20px;
 }
 
-.footer-lista a{
+.footer-lista a {
   font-size: 0.9rem;
 }
 
-.footer-lista a:hover{
+.footer-lista a:hover {
   color: var(--cor-4);
 }
 
-@media (max-width:550px){
+@media (max-width: 550px) {
   .footer-conteudo {
-  flex-direction: column;
-  gap: 20px;
-}
+    flex-direction: column;
+    gap: 50px;
+  }
+
 }
