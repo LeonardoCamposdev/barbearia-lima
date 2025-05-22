@@ -1,5 +1,8 @@
 .unidades-bg {
-  background-color: #f1f1f1;
+  background: url(../../images/imagem-servicos.jpg);
+      background-position: right right;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .unidades-container {
