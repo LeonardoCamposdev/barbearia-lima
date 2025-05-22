@@ -33,7 +33,7 @@
   border-radius: 6px;
 }
 
-.teste-flex {
+.slide-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
@@ -49,7 +49,7 @@
 .slider {
   overflow-x: hidden;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 6px;
   scroll-behavior: smooth;
 }
 
@@ -79,12 +79,12 @@
 
 .btn-slider:first-of-type {
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
 }
 
 .btn-slider:last-of-type {
   right: 0;
-  transform: translate(50%, -50%);
+  transform: translate(50%, -100%);
 }
 
 .btn-slider:hover {
@@ -100,6 +100,8 @@
     margin-bottom: 16px;
     display: inline-block;
 }
+
+
 
 @media (max-width: 1100px) {
   .unidades-container {
