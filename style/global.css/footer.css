@@ -35,10 +35,16 @@
   color: var(--cor-4);
 }
 
+.footer-creditos {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.
+
 @media (max-width: 550px) {
   .footer-conteudo {
     flex-direction: column;
     gap: 50px;
   }
-
 }
