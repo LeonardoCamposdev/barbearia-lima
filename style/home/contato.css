@@ -47,6 +47,7 @@
 .contato-localidade li p {
     display: flex;
     align-items: center;
+    text-align: left;
 }
 
 .contato-localidade .icon {
