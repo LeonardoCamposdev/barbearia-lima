@@ -1,8 +1,8 @@
 .unidades-bg {
   background: url(../../images/imagem-servicos.jpg);
-      background-position: right right;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-position: right right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .unidades-container {
@@ -94,23 +94,21 @@
   background-color: #f3c200;
 }
 
-.slide h1{
+.slide h1 {
   margin-top: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 16px;
-    display: inline-block;
-    border-bottom: 2px solid var(--cor-4);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  display: inline-block;
+  border-bottom: 2px solid var(--cor-4);
 }
-
-
 
 @media (max-width: 1100px) {
   .unidades-container {
-  padding: 100px 40px 80px 40px;
-}
+    padding: 100px 40px 80px 40px;
+  }
 
   .btn-slider {
     width: 45px;

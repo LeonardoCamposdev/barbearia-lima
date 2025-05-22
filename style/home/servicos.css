@@ -55,7 +55,25 @@
 
 .servicos-lista li:hover{
     border:  1px solid var(--cor-4);
+    transform: scale(1.05);
 }
+
+.servicos-lista li::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.servicos-lista li:hover::before {
+    width: 20%;
+  }
+
 
 .servicos-lista img{
     width: 35px;
