@@ -44,7 +44,7 @@
   
   /* ANIMAÇÃO AO START DA TELA  */
   .js .fadeInDown {
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -40px, 0);
   }
   .js .fadeInUp {
     transform: translate3d(0, 20px, 0);
