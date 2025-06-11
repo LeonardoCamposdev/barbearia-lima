@@ -11,3 +11,16 @@ initAnimacaoScrollUp();
 initAnimacaoScrollDown();
 initSlide1();
 initSlide2();
+
+
+const containerLocalidade = document.querySelector('.container-teste-1');
+
+    const iframe = containerLocalidade.querySelector(".li-iframe");
+
+    containerLocalidade.addEventListener("mouseenter", () => {
+      iframe.classList.add("active");
+    });
+
+    containerLocalidade.addEventListener("mouseleave", () => {
+      iframe.classList.remove("active");
+    });

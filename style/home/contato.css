@@ -1,5 +1,5 @@
-.contato-bg{
-    background-color: #F1F1F1;
+.contato-bg {
+  background-color: #f1f1f1;
 }
 
 .contato-container {
@@ -8,8 +8,9 @@
   padding: 100px 20px 80px 20px;
 }
 
-.contato-conteudo{
-    text-align: center;
+.contato-conteudo {
+  text-align: center;
+  height: 600px;
 }
 
 .contato-conteudo h2 {
@@ -19,7 +20,7 @@
   font-size: 1.1rem;
   border-bottom: 2px solid var(--cor-4);
   margin-bottom: 16px;
-    display: inline-block;
+  display: inline-block;
 }
 
 .contato-conteudo > h1 {
@@ -29,28 +30,40 @@
   margin-bottom: 60px;
 }
 
-
 .contato-localidade {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 30px;
 }
 
-.contato-localidade li {
+.container-teste-1 {
+  position: relative;
+}
+
+.li-1111,
+.li-2222{
+  position: absolute;
+}
+
+.container-teste-1 li,
+.container-teste-2 li {
   background-color: var(--cor-1);
   padding: 20px;
   border-radius: 12px;
+  height: 320px;
+  width: 480px;
 }
 
-
-.contato-localidade li p {
-    display: flex;
-    align-items: center;
-    text-align: left;
+.container-teste-1 li p,
+.container-teste-2 li p {
+  display: flex;
+  align-items: center;
+  text-align: left;
 }
 
-.contato-localidade .icon {
+.container-teste-1 .icon,
+.container-teste-2 .icon {
   height: 35px;
   width: 25px;
   background-color: var(--cor-4);
@@ -58,29 +71,64 @@
   border-radius: 6px;
 }
 
-.contato-localidade li h1 {
+.container-teste-1 li h1,
+.container-teste-2 li h1 {
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
-.contato-localidade > li > p {
+.container-teste-1 > li > p,
+.container-teste-2 > li > p {
   font-weight: 400;
   font-size: 0.85rem;
   margin-bottom: 10px;
 }
 
-.contato-localidade > li > p:nth-child(6) {
+.container-teste-1 > li > p:nth-child(6),
+.container-teste-2 > li > p:nth-child(6) {
   margin-bottom: 40px;
 }
 
-.contato-localidade .referencia-icons {
-    width: 20px;
-    margin-right: 8px;
+
+.contato-localidade .li-iframe {
+  padding: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 2;
 }
 
-@media (max-width:840px){
-    .contato-localidade {
+.li-iframe.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contato-localidade .referencia-icons {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.iframe-1{
+    border-radius: 12px;
+}
+
+@media (max-width: 1180px){
+  .container-teste-1 li,
+.container-teste-2 li {
+  width: 420px;
+}
+
+.contato-localidade .iframe-1,
+.contato-localidade .iframe-1{
+  width: 460px;
+}
+}
+
+@media (max-width: 1050px) {
+  .contato-localidade {
     grid-template-columns: 1fr;
     gap: 40px;
-}
+    justify-content: center;
+  }
+  
 }
