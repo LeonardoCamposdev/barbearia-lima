@@ -46,8 +46,7 @@
 }
 
 /* Estilos dos blocos de informação */
-.container-teste-1 li,
-.container-teste-2 li {
+.container-teste-1 li{
   display: block;
   background-color: var(--cor-1);
   padding: 20px;
@@ -59,15 +58,13 @@
 }
 
 /* Estilo de título */
-.container-teste-1 li h1,
-.container-teste-2 li h1 {
+.container-teste-1 li h1{
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
 /* Estilo dos parágrafos */
-.container-teste-1 li p,
-.container-teste-2 li p {
+.container-teste-1 li p{
   display: flex;
   align-items: center;
   text-align: left;
@@ -76,14 +73,12 @@
   margin-bottom: 10px;
 }
 
-.container-teste-1 li p:nth-child(6),
-.container-teste-2 li p:nth-child(6) {
+.container-teste-1 li p:nth-child(6){
   margin-bottom: 40px;
 }
 
 /* Ícones SVG no topo */
-.container-teste-1 .icon,
-.container-teste-2 .icon {
+.container-teste-1 .icon{
   height: 35px;
   width: 25px;
   background-color: var(--cor-4);
@@ -129,8 +124,7 @@
   .container-teste-1 {
     flex-wrap: wrap;
 }
-  .container-teste-1 li,
-  .container-teste-2 li {
+  .container-teste-1 li{
     width: 420px;
   }
 
@@ -148,8 +142,7 @@
 }
 
 @media (max-width: 550px){
-    .container-teste-1 li,
-  .container-teste-2 li {
+    .container-teste-1 li{
     width: 90%;
   }
 }
