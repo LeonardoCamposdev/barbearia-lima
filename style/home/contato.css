@@ -1,20 +1,21 @@
+/* Fundo da seção de contato */
 .contato-bg {
   background-color: #f1f1f1;
 }
 
+/* Container centralizado */
 .contato-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 20px 80px 20px;
+  padding: 100px 20px 80px;
 }
 
+/* Conteúdo com títulos */
 .contato-conteudo {
   text-align: center;
-  height: 600px;
 }
 
 .contato-conteudo h2 {
-  text-align: center;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.1rem;
@@ -24,44 +25,63 @@
 }
 
 .contato-conteudo > h1 {
-  text-align: center;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 60px;
 }
 
+/* Layout das localizações */
 .contato-localidade {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 60px;
   margin-top: 30px;
 }
 
 .container-teste-1 {
-  position: relative;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
 }
 
-.li-1111,
-.li-2222{
-  position: absolute;
-}
-
+/* Estilos dos blocos de informação */
 .container-teste-1 li,
 .container-teste-2 li {
+  display: block;
   background-color: var(--cor-1);
   padding: 20px;
   border-radius: 12px;
   height: 320px;
   width: 480px;
+  position: relative; /* Necessário para sobrepor o iframe */
+  overflow: hidden;
 }
 
+/* Estilo de título */
+.container-teste-1 li h1,
+.container-teste-2 li h1 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos parágrafos */
 .container-teste-1 li p,
 .container-teste-2 li p {
   display: flex;
   align-items: center;
   text-align: left;
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
 }
 
+.container-teste-1 li p:nth-child(6),
+.container-teste-2 li p:nth-child(6) {
+  margin-bottom: 40px;
+}
+
+/* Ícones SVG no topo */
 .container-teste-1 .icon,
 .container-teste-2 .icon {
   height: 35px;
@@ -71,64 +91,65 @@
   border-radius: 6px;
 }
 
-.container-teste-1 li h1,
-.container-teste-2 li h1 {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-}
-
-.container-teste-1 > li > p,
-.container-teste-2 > li > p {
-  font-weight: 400;
-  font-size: 0.85rem;
-  margin-bottom: 10px;
-}
-
-.container-teste-1 > li > p:nth-child(6),
-.container-teste-2 > li > p:nth-child(6) {
-  margin-bottom: 40px;
-}
-
-
-.contato-localidade .li-iframe {
-  padding: 0px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-  z-index: 2;
-}
-
-.li-iframe.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
+/* Ícones de referência ao lado dos textos */
 .contato-localidade .referencia-icons {
   width: 20px;
   margin-right: 8px;
 }
 
-.iframe-1{
-    border-radius: 12px;
+/* Estilo do iframe sobreposto */
+.li-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 10;
 }
 
-@media (max-width: 1180px){
+/* Mostrar iframe ao passar o mouse */
+.li-1111:hover .li-iframe {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Estilo interno do iframe */
+.iframe-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
+}
+
+/* Responsividade */
+@media (max-width: 1180px) {
+  .container-teste-1 {
+    flex-wrap: wrap;
+}
   .container-teste-1 li,
-.container-teste-2 li {
-  width: 420px;
-}
+  .container-teste-2 li {
+    width: 420px;
+  }
 
-.contato-localidade .iframe-1,
-.contato-localidade .iframe-1{
-  width: 460px;
-}
+  .iframe-1 {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 1050px) {
   .contato-localidade {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-  
+}
+
+@media (max-width: 550px){
+    .container-teste-1 li,
+  .container-teste-2 li {
+    width: 90%;
+  }
 }
